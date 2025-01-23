@@ -21,7 +21,7 @@ def transform_texts(texts):
 
     # Zwróć wyniki w postaci listy
     return transformed
-    pass
+
 
 if __name__ == '__main__':
     # Przykładowe wywołanie:
