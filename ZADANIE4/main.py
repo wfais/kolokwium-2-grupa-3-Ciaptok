@@ -8,18 +8,18 @@ def create_and_filter_data():
     3) Odfiltruj wiersze, w których kolumna 'A' spełnia pewien warunek (np. > 50).
     4) Zwróć przefiltrowany DataFrame.
     """
-    # ustaw ziarno losowości np. np.random.seed(123)
+    np.random.seed(123)
 
-    # np.random.randint(...) - stwórz losową tablicę (rozmiar i zakres do wyboru)
-    # arr = ...
+    # Generowanie losowej tablicy 10x2 z zakresu 0-100
+    arr = np.random.randint(0, 100, size=(10, 2))
 
-    # df = 
+    # Konwersja do DataFrame z nazwami kolumn
+    df = pd.DataFrame(arr, columns=['A', 'B'])
 
+    # Filtrowanie: wybierz wiersze, gdzie A > 50
+    filtered_df = df[df['A'] > 50]
 
-    # filtered_df = ...  
-
-    # return ...
-    pass
+    return filtered_df
 
 if __name__ == '__main__':
     # Przykładowe wywołanie

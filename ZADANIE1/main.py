@@ -13,6 +13,14 @@ def transform_texts(texts):
     # transformed = map(lambda t: ..., filtered_texts)
 
     # Zwróć wyniki w postaci listy.
+
+    filtered_texts = [t for t in texts if t.strip()]
+
+    # Zastosuj map i lambda do przekształceń
+    transformed = list(map(lambda t: t.upper()[::-1], filtered_texts))
+
+    # Zwróć wyniki w postaci listy
+    return transformed
     pass
 
 if __name__ == '__main__':
